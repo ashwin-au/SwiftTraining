@@ -14,8 +14,8 @@ struct FormView: View {
         NavigationStack {
             VStack {
                 Form {
-                    CustomFormCell(title: "Name", value: $viewModel.studentListener.name)
-                    CustomFormCell(title: "Addreess", value: $viewModel.studentListener.address)
+                    TextField("Name", text: $viewModel.studentListener.name)
+                    TextField("Address", text: $viewModel.studentListener.address)
                     Picker("Gender", selection: $viewModel.studentListener.sex) {
                         ForEach(Sex.allCases, id: \.self) {
                             Text($0.rawValue)
@@ -36,9 +36,11 @@ struct FormView: View {
                 PrimaryButton(title: "Show Detail") {
                     viewModel.pushToDetail = true
                 }
+
             }
             .navigationTitle("Student Form")
-            .navigationDestination(isPresented: $viewModel.pushToDetail, destination: {
+            .navigationBarTitleDisplayMode(.large)
+            .navigationDestination(isPresented: $viewModel.pushToDetail, destination:  {
                 StudentListView().environmentObject(viewModel)
             })
         }
@@ -48,15 +50,5 @@ struct FormView: View {
 struct formView_Previews: PreviewProvider {
     static var previews: some View {
         FormView()
-    }
-}
-
-struct CustomFormCell: View {
-    var title: String
-    @Binding var value: String
-    var body: some View {
-        HStack {
-            TextField(title, text: $value)
-        }
     }
 }

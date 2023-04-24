@@ -10,7 +10,6 @@ import Foundation
 class FormViewModel: ObservableObject {
     @Published var studentListener: Student
     @Published var studentList = [Student]()
-    @Published var currentIndex = Int()
     @Published var pushToDetail = false
     init() {
         studentListener = Student(name: "", address: "", course: .computerScience, sex: .others)

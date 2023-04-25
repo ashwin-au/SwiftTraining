@@ -16,7 +16,12 @@ struct FormView: View {
                 Form {
                     TextField("Name", text: $viewModel.studentListener.name)
                     TextField("Address", text: $viewModel.studentListener.address)
-                    Picker("Gender", selection: $viewModel.studentListener.sex) {
+                    
+                     
+                    Picker(selection: $viewModel.studentListener.sex, label: HStack {
+                        Image(systemName: "person.fill")
+                        Text("Gender")
+                    }) {
                         ForEach(Sex.allCases, id: \.self) {
                             Text($0.rawValue)
                         }
@@ -33,7 +38,7 @@ struct FormView: View {
                     viewModel.save()
                     viewModel.initList()
                 }
-                PrimaryButton(title: "Show Detail") {
+                PrimaryButton(title: "Show Detail", type: .link, isInfinity: false) {
                     viewModel.pushToDetail = true
                 }
 

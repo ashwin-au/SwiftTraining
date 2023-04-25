@@ -8,15 +8,6 @@
 import SwiftUI
 
 struct PrimaryButton: View {
-     init(title: String, type: PrimaryButton.ButtonType = .fill, isInfinity: Bool = true, onTap: @escaping () -> Void) {
-        self.title = title
-        self.type = type
-        self.isInfinity = isInfinity
-        self.onTap = onTap
-    }
-    
-   
-
     var title: String
     var type: ButtonType = .fill
     var isInfinity: Bool = true

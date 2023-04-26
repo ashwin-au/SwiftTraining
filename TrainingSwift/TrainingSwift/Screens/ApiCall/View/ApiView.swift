@@ -12,8 +12,8 @@ struct ApiView: View {
     var body: some View {
         List(viewModel.result, id: \.self) {
             Text($0.name ?? "")
-        }.onAppear {
-            viewModel.fetchPokemon()
+        }.task {
+            await viewModel.getPokemon()
         }
     }
 }

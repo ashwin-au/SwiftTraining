@@ -10,7 +10,6 @@ import Foundation
 @MainActor
 class ApiViewModel: ObservableObject {
     @Published var result = [Results]()
-    
     @Published var model: PokemonModel?
     @Published var abilities = [Abilities]()
     @Published var navigateToDetail = false

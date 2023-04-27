@@ -10,37 +10,29 @@ import Foundation
 @MainActor
 class ApiViewModel: ObservableObject {
     @Published var result = [Results]()
+    
     @Published var model: PokemonModel?
+    @Published var abilities = [Abilities]()
+    @Published var navigateToDetail = false
     private let url = "https://pokeapi.co/api/v2/pokemon"
+    var selectedPokemonUrl = ""
 
-    func fetchPokemon(url: String) async -> (Result<Data, NetworkError>)  {
-        guard let url = URL(string: url) else { return .failure(.badURL) }
-        let urlRequest = URLRequest(url: url)
-        do {
-            let (data, _) = try await URLSession.shared.data(for: urlRequest)
-            return .success(data)
-        } catch {
-            print("Network error")
-            return .failure(.networkError)
-        }
-    }
-    
-    func parseJson() async -> (Result<[Results], NetworkError>) {
-        let urlResponse = await self.fetchPokemon(url: url)
-        switch urlResponse {
+    func fetchPokemon() async {
+       let responseModel = await APIManager.shared.fetch(with: url, type: PokemonModel.self)
+        switch responseModel {
         case .success(let data):
-            self.model = try? JSONDecoder().decode(PokemonModel.self, from: data)
-            return .success( self.model?.results ?? [])
+            self.model = data
+            self.result = data.results ?? []
         case .failure(let error):
-            return .failure(error)
+            print(error.rawValue)
         }
     }
     
-    func getPokemon() async {
-        let response = await parseJson()
-        switch response {
+    func getPokemonDetail()  async {
+        let responseModel = await APIManager.shared.fetch(with: selectedPokemonUrl, type: PokemonDetail.self)
+        switch responseModel {
         case .success(let data):
-            self.result = data
+            self.abilities = data.abilities ?? []
         case .failure(let error):
             print(error.rawValue)
         }
@@ -53,5 +45,6 @@ class ApiViewModel: ObservableObject {
 enum NetworkError: String, Error {
     case networkError = "Network Error"
     case badURL = "Check the url string"
+    case parseError = "Error occur while parse the Json"
     case other = "Something went wrong"
 }

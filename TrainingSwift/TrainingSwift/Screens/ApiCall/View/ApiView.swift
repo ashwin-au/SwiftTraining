@@ -10,10 +10,20 @@ import SwiftUI
 struct ApiView: View {
     @StateObject var viewModel = ApiViewModel()
     var body: some View {
-        List(viewModel.result, id: \.self) {
-            Text($0.name ?? "")
-        }.task {
-            await viewModel.getPokemon()
+        NavigationStack {
+            List(viewModel.result, id: \.self) { result in
+                Text(result.name ?? "")
+                    .onTapGesture {
+                        viewModel.selectedPokemonUrl = result.url ?? ""
+                        viewModel.navigateToDetail = true
+                    }
+            }.task {
+                await viewModel.fetchPokemon()
+            }
+            .navigationTitle("Pokemon")
+            .navigationDestination(isPresented: $viewModel.navigateToDetail, destination: {
+                PokemonDetailView().environmentObject(viewModel)
+            })
         }
     }
 }

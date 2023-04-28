@@ -10,6 +10,8 @@
 		CA0A271229EE43A300558617 /* TrainingSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0A271129EE43A300558617 /* TrainingSwiftApp.swift */; };
 		CA0A271629EE43A400558617 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA0A271529EE43A400558617 /* Assets.xcassets */; };
 		CA0A271929EE43A400558617 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA0A271829EE43A400558617 /* Preview Assets.xcassets */; };
+		CA0A449B29FB6F7600903AC0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0A449A29FB6F7600903AC0 /* CardView.swift */; };
+		CA0A449E29FB6FFC00903AC0 /* ProfileComposableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0A449D29FB6FFC00903AC0 /* ProfileComposableView.swift */; };
 		CA36056129F1991800A1F146 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36056029F1991800A1F146 /* FormView.swift */; };
 		CA36056429F199B500A1F146 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36056329F199B500A1F146 /* FormViewModel.swift */; };
 		CA36056829F199D000A1F146 /* FormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36056729F199D000A1F146 /* FormModel.swift */; };
@@ -34,6 +36,8 @@
 		CA0A271129EE43A300558617 /* TrainingSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingSwiftApp.swift; sourceTree = "<group>"; };
 		CA0A271529EE43A400558617 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CA0A271829EE43A400558617 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CA0A449A29FB6F7600903AC0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		CA0A449D29FB6FFC00903AC0 /* ProfileComposableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileComposableView.swift; sourceTree = "<group>"; };
 		CA36056029F1991800A1F146 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		CA36056329F199B500A1F146 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
 		CA36056729F199D000A1F146 /* FormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModel.swift; sourceTree = "<group>"; };
@@ -83,6 +87,7 @@
 		CA0A271029EE43A300558617 /* TrainingSwift */ = {
 			isa = PBXGroup;
 			children = (
+				CA0A449929FB6F6500903AC0 /* Helper */,
 				CACFBF7929FA1820005EF72E /* Networking */,
 				CA36056929F1B0CB00A1F146 /* ComposableView */,
 				CAE70A2629F0DE69000A2400 /* Extension */,
@@ -100,6 +105,22 @@
 				CA0A271829EE43A400558617 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CA0A449929FB6F6500903AC0 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CA0A449A29FB6F7600903AC0 /* CardView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CA0A449C29FB6FDA00903AC0 /* ProfileCard */ = {
+			isa = PBXGroup;
+			children = (
+				CA0A449D29FB6FFC00903AC0 /* ProfileComposableView.swift */,
+			);
+			path = ProfileCard;
 			sourceTree = "<group>";
 		};
 		CA36055F29F1990E00A1F146 /* Forms */ = {
@@ -140,6 +161,7 @@
 		CA36056929F1B0CB00A1F146 /* ComposableView */ = {
 			isa = PBXGroup;
 			children = (
+				CA0A449C29FB6FDA00903AC0 /* ProfileCard */,
 				CA36056A29F1B0D700A1F146 /* Buttons */,
 			);
 			path = ComposableView;
@@ -336,9 +358,11 @@
 				CA0A271229EE43A300558617 /* TrainingSwiftApp.swift in Sources */,
 				CA36056C29F1B0F500A1F146 /* PrimaryButton.swift in Sources */,
 				CAE70A2929F0DE9B000A2400 /* Color+.swift in Sources */,
+				CA0A449B29FB6F7600903AC0 /* CardView.swift in Sources */,
 				CA36057129F1B88600A1F146 /* View+.swift in Sources */,
 				CACFBF7B29FA182E005EF72E /* APIManager.swift in Sources */,
 				CA3D762529F77C5100D905BA /* ApiView.swift in Sources */,
+				CA0A449E29FB6FFC00903AC0 /* ProfileComposableView.swift in Sources */,
 				CACFBFDE29FA213A005EF72E /* Ability.swift in Sources */,
 				CA3D762729F77C7800D905BA /* PokemonModel.swift in Sources */,
 				CA36056829F199D000A1F146 /* FormModel.swift in Sources */,

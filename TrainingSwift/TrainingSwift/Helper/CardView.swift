@@ -7,32 +7,6 @@
 
 import SwiftUI
 
-struct CardView<Content: View>: View {
-    var strokeColor: Color
-    var paddingVal: CGFloat = 20
-    var cornerRadius: CGFloat = 8
-    var backgroundColor: Color = .white
-    var content: Content
-
-    init(strokeColor: Color, paddingVal: CGFloat = 20,
-         backgroundColor: Color = .white,
-         cornerRadius: CGFloat = 8, @ViewBuilder content: () -> Content) {
-        self.strokeColor = strokeColor
-        self.paddingVal = paddingVal
-        self.cornerRadius = cornerRadius
-        self.backgroundColor = backgroundColor
-        self.content = content()
-    }
-
-    var body: some View {
-        content
-            .egCardView(backgroundColor: backgroundColor,
-                        cornerRadius: cornerRadius,
-                        padding: paddingVal,
-                        stroke: strokeColor)
-    }
-}
-
 extension View {
     func egCardView(foregroundColor: Color = .black,
                     backgroundColor: Color = .gray.opacity(0.4),
@@ -60,3 +34,24 @@ struct Border: ViewModifier {
     }
 }
 
+struct CardView<Content: View>: View {
+    init(foregroundColor: Color = .black, backgroundColor: Color = .gray.opacity(0.4), cornerRadius: CGFloat = 8, padding: CGFloat = 8, stroke: Color = .gray, @ViewBuilder content: () -> Content) {
+        self.foregroundColor = foregroundColor
+        self.backgroundColor = backgroundColor
+        self.cornerRadius = cornerRadius
+        self.padding = padding
+        self.stroke = stroke
+        self.content = content()
+    }
+
+    var foregroundColor: Color
+    var backgroundColor: Color
+    var cornerRadius: CGFloat
+    var padding: CGFloat
+    var stroke: Color
+    var content: Content
+    var body: some View {
+        content
+            .egCardView(foregroundColor: foregroundColor, backgroundColor: backgroundColor, cornerRadius: cornerRadius, padding: padding, stroke: stroke)
+    }
+}

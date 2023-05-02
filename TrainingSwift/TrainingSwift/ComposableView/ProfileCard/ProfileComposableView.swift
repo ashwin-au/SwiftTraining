@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileComposableView: View {
     var body: some View {
-        CardView(strokeColor: .clear, paddingVal: 32, backgroundColor: .secondaryBgColor, cornerRadius: 24) {
+        CardView(backgroundColor: .secondaryBgColor, cornerRadius: 24, padding: 32, stroke: .clear, content:  {
             VStack(spacing: 28) {
                 VStack(spacing: 16) {
                     Image("profile")
@@ -37,7 +37,7 @@ struct ProfileComposableView: View {
                        .cornerRadius(24)
                })
             }
-        }
+        })
         .cornerRadius(24)
     }
 }

@@ -21,6 +21,7 @@
 		CA3D762529F77C5100D905BA /* ApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3D762429F77C5100D905BA /* ApiView.swift */; };
 		CA3D762729F77C7800D905BA /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3D762629F77C7800D905BA /* PokemonModel.swift */; };
 		CA3D762929F77E5800D905BA /* ApiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3D762829F77E5800D905BA /* ApiViewModel.swift */; };
+		CA4EF5172A00BB29002E9DD8 /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EF5162A00BB29002E9DD8 /* CustomCardView.swift */; };
 		CACAA7B229F6B19D00C77977 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACAA7B129F6B19D00C77977 /* Padding.swift */; };
 		CACFBF7B29FA182E005EF72E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFBF7A29FA182E005EF72E /* APIManager.swift */; };
 		CACFBFB929FA1BB4005EF72E /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFBF8A29FA1BB3005EF72E /* Json4Swift_Base.swift */; };
@@ -47,6 +48,7 @@
 		CA3D762429F77C5100D905BA /* ApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiView.swift; sourceTree = "<group>"; };
 		CA3D762629F77C7800D905BA /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
 		CA3D762829F77E5800D905BA /* ApiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewModel.swift; sourceTree = "<group>"; };
+		CA4EF5162A00BB29002E9DD8 /* CustomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
 		CACAA7B129F6B19D00C77977 /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
 		CACFBF7A29FA182E005EF72E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		CACFBF8A29FA1BB3005EF72E /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Json4Swift_Base.swift; path = ../../../../../../../../../../Downloads/codegen_6449e3fe9414e/Json4Swift_Base.swift; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				CA0A449D29FB6FFC00903AC0 /* ProfileComposableView.swift */,
+				CA4EF5162A00BB29002E9DD8 /* CustomCardView.swift */,
 			);
 			path = ProfileCard;
 			sourceTree = "<group>";
@@ -369,6 +372,7 @@
 				CA36056129F1991800A1F146 /* FormView.swift in Sources */,
 				CACFBFCD29FA1BB4005EF72E /* Abilities.swift in Sources */,
 				CA3D762929F77E5800D905BA /* ApiViewModel.swift in Sources */,
+				CA4EF5172A00BB29002E9DD8 /* CustomCardView.swift in Sources */,
 				CA36056E29F1B2F900A1F146 /* StudentListView.swift in Sources */,
 				CA36056429F199B500A1F146 /* FormViewModel.swift in Sources */,
 			);

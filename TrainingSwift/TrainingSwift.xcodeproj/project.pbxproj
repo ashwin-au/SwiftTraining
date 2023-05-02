@@ -22,6 +22,9 @@
 		CA3D762729F77C7800D905BA /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3D762629F77C7800D905BA /* PokemonModel.swift */; };
 		CA3D762929F77E5800D905BA /* ApiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3D762829F77E5800D905BA /* ApiViewModel.swift */; };
 		CA4EF5172A00BB29002E9DD8 /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EF5162A00BB29002E9DD8 /* CustomCardView.swift */; };
+		CAA699AA2A013BC9009C0025 /* BiometricViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA699A92A013BC9009C0025 /* BiometricViewModel.swift */; };
+		CAA699AC2A013BDA009C0025 /* BiometricAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA699AB2A013BDA009C0025 /* BiometricAuthView.swift */; };
+		CAA699B02A014486009C0025 /* ExpandableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA699AF2A014486009C0025 /* ExpandableView.swift */; };
 		CACAA7B229F6B19D00C77977 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACAA7B129F6B19D00C77977 /* Padding.swift */; };
 		CACFBF7B29FA182E005EF72E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFBF7A29FA182E005EF72E /* APIManager.swift */; };
 		CACFBFB929FA1BB4005EF72E /* Json4Swift_Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACFBF8A29FA1BB3005EF72E /* Json4Swift_Base.swift */; };
@@ -49,6 +52,10 @@
 		CA3D762629F77C7800D905BA /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
 		CA3D762829F77E5800D905BA /* ApiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewModel.swift; sourceTree = "<group>"; };
 		CA4EF5162A00BB29002E9DD8 /* CustomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
+		CAA699A92A013BC9009C0025 /* BiometricViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricViewModel.swift; sourceTree = "<group>"; };
+		CAA699AB2A013BDA009C0025 /* BiometricAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthView.swift; sourceTree = "<group>"; };
+		CAA699AD2A014133009C0025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		CAA699AF2A014486009C0025 /* ExpandableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpandableView.swift; sourceTree = "<group>"; };
 		CACAA7B129F6B19D00C77977 /* Padding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
 		CACFBF7A29FA182E005EF72E /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		CACFBF8A29FA1BB3005EF72E /* Json4Swift_Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Json4Swift_Base.swift; path = ../../../../../../../../../../Downloads/codegen_6449e3fe9414e/Json4Swift_Base.swift; sourceTree = "<group>"; };
@@ -89,6 +96,7 @@
 		CA0A271029EE43A300558617 /* TrainingSwift */ = {
 			isa = PBXGroup;
 			children = (
+				CAA699AD2A014133009C0025 /* Info.plist */,
 				CA0A449929FB6F6500903AC0 /* Helper */,
 				CACFBF7929FA1820005EF72E /* Networking */,
 				CA36056929F1B0CB00A1F146 /* ComposableView */,
@@ -222,6 +230,39 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		CAA699A62A013BA8009C0025 /* BiometricAuth */ = {
+			isa = PBXGroup;
+			children = (
+				CAA699A82A013BB9009C0025 /* View */,
+				CAA699A72A013BB1009C0025 /* ViewModel */,
+			);
+			path = BiometricAuth;
+			sourceTree = "<group>";
+		};
+		CAA699A72A013BB1009C0025 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CAA699A92A013BC9009C0025 /* BiometricViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CAA699A82A013BB9009C0025 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CAA699AB2A013BDA009C0025 /* BiometricAuthView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CAA699AE2A014474009C0025 /* ExpandableView */ = {
+			isa = PBXGroup;
+			children = (
+				CAA699AF2A014486009C0025 /* ExpandableView.swift */,
+			);
+			path = ExpandableView;
+			sourceTree = "<group>";
+		};
 		CACAA7B029F6B18300C77977 /* Padding */ = {
 			isa = PBXGroup;
 			children = (
@@ -276,6 +317,8 @@
 		CAFF562829EF8FE0001BEB8D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CAA699AE2A014474009C0025 /* ExpandableView */,
+				CAA699A62A013BA8009C0025 /* BiometricAuth */,
 				CA3D762029F77C2700D905BA /* ApiCall */,
 				CACAA7B029F6B18300C77977 /* Padding */,
 				CA36055F29F1990E00A1F146 /* Forms */,
@@ -364,16 +407,19 @@
 				CA0A449B29FB6F7600903AC0 /* CardView.swift in Sources */,
 				CA36057129F1B88600A1F146 /* View+.swift in Sources */,
 				CACFBF7B29FA182E005EF72E /* APIManager.swift in Sources */,
+				CAA699AC2A013BDA009C0025 /* BiometricAuthView.swift in Sources */,
 				CA3D762529F77C5100D905BA /* ApiView.swift in Sources */,
 				CA0A449E29FB6FFC00903AC0 /* ProfileComposableView.swift in Sources */,
 				CACFBFDE29FA213A005EF72E /* Ability.swift in Sources */,
 				CA3D762729F77C7800D905BA /* PokemonModel.swift in Sources */,
 				CA36056829F199D000A1F146 /* FormModel.swift in Sources */,
+				CAA699AA2A013BC9009C0025 /* BiometricViewModel.swift in Sources */,
 				CA36056129F1991800A1F146 /* FormView.swift in Sources */,
 				CACFBFCD29FA1BB4005EF72E /* Abilities.swift in Sources */,
 				CA3D762929F77E5800D905BA /* ApiViewModel.swift in Sources */,
 				CA4EF5172A00BB29002E9DD8 /* CustomCardView.swift in Sources */,
 				CA36056E29F1B2F900A1F146 /* StudentListView.swift in Sources */,
+				CAA699B02A014486009C0025 /* ExpandableView.swift in Sources */,
 				CA36056429F199B500A1F146 /* FormViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +551,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TrainingSwift/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrainingSwift/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "\"This application need Face-ID for authentication\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -533,6 +581,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TrainingSwift/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TrainingSwift/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "\"This application need Face-ID for authentication\"";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

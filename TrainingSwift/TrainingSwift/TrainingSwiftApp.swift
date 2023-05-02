@@ -11,7 +11,7 @@ import SwiftUI
 struct TrainingSwiftApp: App {
     var body: some Scene {
         WindowGroup {
-            ApiView()
+            BiometricAuthView()
         }
     }
 }

@@ -12,6 +12,10 @@
 		CA0A271929EE43A400558617 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA0A271829EE43A400558617 /* Preview Assets.xcassets */; };
 		CA0A449B29FB6F7600903AC0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0A449A29FB6F7600903AC0 /* CardView.swift */; };
 		CA0A449E29FB6FFC00903AC0 /* ProfileComposableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0A449D29FB6FFC00903AC0 /* ProfileComposableView.swift */; };
+		CA2178D72A020067005C90D5 /* NavigationStackExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2178D62A020067005C90D5 /* NavigationStackExample.swift */; };
+		CA2178DA2A02007E005C90D5 /* NavigationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2178D92A02007E005C90D5 /* NavigationSheet.swift */; };
+		CA2178DD2A020096005C90D5 /* Halfsheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2178DC2A020096005C90D5 /* Halfsheet.swift */; };
+		CA2178E02A0206B1005C90D5 /* CustomAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2178DF2A0206B1005C90D5 /* CustomAlertView.swift */; };
 		CA36056129F1991800A1F146 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36056029F1991800A1F146 /* FormView.swift */; };
 		CA36056429F199B500A1F146 /* FormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36056329F199B500A1F146 /* FormViewModel.swift */; };
 		CA36056829F199D000A1F146 /* FormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA36056729F199D000A1F146 /* FormModel.swift */; };
@@ -42,6 +46,10 @@
 		CA0A271829EE43A400558617 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA0A449A29FB6F7600903AC0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CA0A449D29FB6FFC00903AC0 /* ProfileComposableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileComposableView.swift; sourceTree = "<group>"; };
+		CA2178D62A020067005C90D5 /* NavigationStackExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackExample.swift; sourceTree = "<group>"; };
+		CA2178D92A02007E005C90D5 /* NavigationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSheet.swift; sourceTree = "<group>"; };
+		CA2178DC2A020096005C90D5 /* Halfsheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halfsheet.swift; sourceTree = "<group>"; };
+		CA2178DF2A0206B1005C90D5 /* CustomAlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertView.swift; sourceTree = "<group>"; };
 		CA36056029F1991800A1F146 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
 		CA36056329F199B500A1F146 /* FormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewModel.swift; sourceTree = "<group>"; };
 		CA36056729F199D000A1F146 /* FormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormModel.swift; sourceTree = "<group>"; };
@@ -132,6 +140,48 @@
 				CA4EF5162A00BB29002E9DD8 /* CustomCardView.swift */,
 			);
 			path = ProfileCard;
+			sourceTree = "<group>";
+		};
+		CA2178D42A02000D005C90D5 /* Navigations */ = {
+			isa = PBXGroup;
+			children = (
+				CA2178DB2A020084005C90D5 /* HalfSheet */,
+				CA2178D82A02006C005C90D5 /* NavigationSheet */,
+				CA2178D52A02003C005C90D5 /* NavigationStack */,
+			);
+			path = Navigations;
+			sourceTree = "<group>";
+		};
+		CA2178D52A02003C005C90D5 /* NavigationStack */ = {
+			isa = PBXGroup;
+			children = (
+				CA2178D62A020067005C90D5 /* NavigationStackExample.swift */,
+			);
+			path = NavigationStack;
+			sourceTree = "<group>";
+		};
+		CA2178D82A02006C005C90D5 /* NavigationSheet */ = {
+			isa = PBXGroup;
+			children = (
+				CA2178D92A02007E005C90D5 /* NavigationSheet.swift */,
+			);
+			path = NavigationSheet;
+			sourceTree = "<group>";
+		};
+		CA2178DB2A020084005C90D5 /* HalfSheet */ = {
+			isa = PBXGroup;
+			children = (
+				CA2178DC2A020096005C90D5 /* Halfsheet.swift */,
+			);
+			path = HalfSheet;
+			sourceTree = "<group>";
+		};
+		CA2178DE2A02069D005C90D5 /* CustomAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				CA2178DF2A0206B1005C90D5 /* CustomAlertView.swift */,
+			);
+			path = CustomAlertView;
 			sourceTree = "<group>";
 		};
 		CA36055F29F1990E00A1F146 /* Forms */ = {
@@ -317,6 +367,8 @@
 		CAFF562829EF8FE0001BEB8D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CA2178DE2A02069D005C90D5 /* CustomAlertView */,
+				CA2178D42A02000D005C90D5 /* Navigations */,
 				CAA699AE2A014474009C0025 /* ExpandableView */,
 				CAA699A62A013BA8009C0025 /* BiometricAuth */,
 				CA3D762029F77C2700D905BA /* ApiCall */,
@@ -398,6 +450,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAE70A2C29F0E8B4000A2400 /* TabBarView.swift in Sources */,
+				CA2178DA2A02007E005C90D5 /* NavigationSheet.swift in Sources */,
 				CACAA7B229F6B19D00C77977 /* Padding.swift in Sources */,
 				CACFBFDC29FA1D65005EF72E /* PokemonDetailView.swift in Sources */,
 				CACFBFB929FA1BB4005EF72E /* Json4Swift_Base.swift in Sources */,
@@ -407,6 +460,7 @@
 				CA0A449B29FB6F7600903AC0 /* CardView.swift in Sources */,
 				CA36057129F1B88600A1F146 /* View+.swift in Sources */,
 				CACFBF7B29FA182E005EF72E /* APIManager.swift in Sources */,
+				CA2178D72A020067005C90D5 /* NavigationStackExample.swift in Sources */,
 				CAA699AC2A013BDA009C0025 /* BiometricAuthView.swift in Sources */,
 				CA3D762529F77C5100D905BA /* ApiView.swift in Sources */,
 				CA0A449E29FB6FFC00903AC0 /* ProfileComposableView.swift in Sources */,
@@ -414,8 +468,10 @@
 				CA3D762729F77C7800D905BA /* PokemonModel.swift in Sources */,
 				CA36056829F199D000A1F146 /* FormModel.swift in Sources */,
 				CAA699AA2A013BC9009C0025 /* BiometricViewModel.swift in Sources */,
+				CA2178DD2A020096005C90D5 /* Halfsheet.swift in Sources */,
 				CA36056129F1991800A1F146 /* FormView.swift in Sources */,
 				CACFBFCD29FA1BB4005EF72E /* Abilities.swift in Sources */,
+				CA2178E02A0206B1005C90D5 /* CustomAlertView.swift in Sources */,
 				CA3D762929F77E5800D905BA /* ApiViewModel.swift in Sources */,
 				CA4EF5172A00BB29002E9DD8 /* CustomCardView.swift in Sources */,
 				CA36056E29F1B2F900A1F146 /* StudentListView.swift in Sources */,

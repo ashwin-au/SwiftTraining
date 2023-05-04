@@ -24,8 +24,8 @@ struct PrimaryButton: View {
         HStack {
             Button(action: { onTap() }, label: {
                 Text(title)
-                    .if(isInfinity) {
-                        $0.frame(maxWidth: .infinity, alignment: .center)
+                    .if(isInfinity) { view in
+                        view.frame(maxWidth: .infinity, alignment: .center)
                     }
                     .padding(12)
                     .foregroundColor(foregroundColor)

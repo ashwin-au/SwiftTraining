@@ -12,6 +12,9 @@
 		CA0A271929EE43A400558617 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA0A271829EE43A400558617 /* Preview Assets.xcassets */; };
 		CA0A449B29FB6F7600903AC0 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0A449A29FB6F7600903AC0 /* CardView.swift */; };
 		CA0A449E29FB6FFC00903AC0 /* ProfileComposableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0A449D29FB6FFC00903AC0 /* ProfileComposableView.swift */; };
+		CA101F1E2A03DF4400BFBA07 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA101F1D2A03DF4400BFBA07 /* MapView.swift */; };
+		CA101F202A03DF4E00BFBA07 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA101F1F2A03DF4E00BFBA07 /* MapViewModel.swift */; };
+		CA101F222A03DF5800BFBA07 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA101F212A03DF5800BFBA07 /* MapModel.swift */; };
 		CA2178D72A020067005C90D5 /* NavigationStackExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2178D62A020067005C90D5 /* NavigationStackExample.swift */; };
 		CA2178DA2A02007E005C90D5 /* NavigationSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2178D92A02007E005C90D5 /* NavigationSheet.swift */; };
 		CA2178DD2A020096005C90D5 /* Halfsheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA2178DC2A020096005C90D5 /* Halfsheet.swift */; };
@@ -46,6 +49,9 @@
 		CA0A271829EE43A400558617 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CA0A449A29FB6F7600903AC0 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CA0A449D29FB6FFC00903AC0 /* ProfileComposableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileComposableView.swift; sourceTree = "<group>"; };
+		CA101F1D2A03DF4400BFBA07 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		CA101F1F2A03DF4E00BFBA07 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		CA101F212A03DF5800BFBA07 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		CA2178D62A020067005C90D5 /* NavigationStackExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationStackExample.swift; sourceTree = "<group>"; };
 		CA2178D92A02007E005C90D5 /* NavigationSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSheet.swift; sourceTree = "<group>"; };
 		CA2178DC2A020096005C90D5 /* Halfsheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Halfsheet.swift; sourceTree = "<group>"; };
@@ -140,6 +146,40 @@
 				CA4EF5162A00BB29002E9DD8 /* CustomCardView.swift */,
 			);
 			path = ProfileCard;
+			sourceTree = "<group>";
+		};
+		CA101F192A03DF1D00BFBA07 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				CA101F1C2A03DF3600BFBA07 /* Model */,
+				CA101F1B2A03DF2F00BFBA07 /* ViewModel */,
+				CA101F1A2A03DF2A00BFBA07 /* View */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		CA101F1A2A03DF2A00BFBA07 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA101F1D2A03DF4400BFBA07 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CA101F1B2A03DF2F00BFBA07 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CA101F1F2A03DF4E00BFBA07 /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CA101F1C2A03DF3600BFBA07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA101F212A03DF5800BFBA07 /* MapModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CA2178D42A02000D005C90D5 /* Navigations */ = {
@@ -367,6 +407,7 @@
 		CAFF562829EF8FE0001BEB8D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CA101F192A03DF1D00BFBA07 /* MapView */,
 				CA2178DE2A02069D005C90D5 /* CustomAlertView */,
 				CA2178D42A02000D005C90D5 /* Navigations */,
 				CAA699AE2A014474009C0025 /* ExpandableView */,
@@ -449,6 +490,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA101F222A03DF5800BFBA07 /* MapModel.swift in Sources */,
 				CAE70A2C29F0E8B4000A2400 /* TabBarView.swift in Sources */,
 				CA2178DA2A02007E005C90D5 /* NavigationSheet.swift in Sources */,
 				CACAA7B229F6B19D00C77977 /* Padding.swift in Sources */,
@@ -460,9 +502,11 @@
 				CA0A449B29FB6F7600903AC0 /* CardView.swift in Sources */,
 				CA36057129F1B88600A1F146 /* View+.swift in Sources */,
 				CACFBF7B29FA182E005EF72E /* APIManager.swift in Sources */,
+				CA101F202A03DF4E00BFBA07 /* MapViewModel.swift in Sources */,
 				CA2178D72A020067005C90D5 /* NavigationStackExample.swift in Sources */,
 				CAA699AC2A013BDA009C0025 /* BiometricAuthView.swift in Sources */,
 				CA3D762529F77C5100D905BA /* ApiView.swift in Sources */,
+				CA101F1E2A03DF4400BFBA07 /* MapView.swift in Sources */,
 				CA0A449E29FB6FFC00903AC0 /* ProfileComposableView.swift in Sources */,
 				CACFBFDE29FA213A005EF72E /* Ability.swift in Sources */,
 				CA3D762729F77C7800D905BA /* PokemonModel.swift in Sources */,

@@ -12,7 +12,7 @@ struct ProfileComposableView: View {
         CardView(backgroundColor: .secondaryBgColor, cornerRadius: 24, padding: 32, stroke: .clear, content:  {
             VStack(spacing: 28) {
                 VStack(spacing: 16) {
-                    Image("profile")
+                    Image.profile
                         .resizable()
                         .frame(width: 232, height: 232)
                         .padding(.bottom, 8)

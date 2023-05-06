@@ -29,6 +29,9 @@
 		CA3D762729F77C7800D905BA /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3D762629F77C7800D905BA /* PokemonModel.swift */; };
 		CA3D762929F77E5800D905BA /* ApiViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3D762829F77E5800D905BA /* ApiViewModel.swift */; };
 		CA4EF5172A00BB29002E9DD8 /* CustomCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4EF5162A00BB29002E9DD8 /* CustomCardView.swift */; };
+		CA7836DA2A05F44100BC4292 /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7836D92A05F44100BC4292 /* BottomSheetView.swift */; };
+		CA7836DD2A05F62300BC4292 /* MatchedGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7836DC2A05F62300BC4292 /* MatchedGeometry.swift */; };
+		CA7836E02A05FC0D00BC4292 /* Image+.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA7836DF2A05FC0D00BC4292 /* Image+.swift */; };
 		CAA699AA2A013BC9009C0025 /* BiometricViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA699A92A013BC9009C0025 /* BiometricViewModel.swift */; };
 		CAA699AC2A013BDA009C0025 /* BiometricAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA699AB2A013BDA009C0025 /* BiometricAuthView.swift */; };
 		CAA699B02A014486009C0025 /* ExpandableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA699AF2A014486009C0025 /* ExpandableView.swift */; };
@@ -66,6 +69,9 @@
 		CA3D762629F77C7800D905BA /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
 		CA3D762829F77E5800D905BA /* ApiViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiViewModel.swift; sourceTree = "<group>"; };
 		CA4EF5162A00BB29002E9DD8 /* CustomCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCardView.swift; sourceTree = "<group>"; };
+		CA7836D92A05F44100BC4292 /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		CA7836DC2A05F62300BC4292 /* MatchedGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedGeometry.swift; sourceTree = "<group>"; };
+		CA7836DF2A05FC0D00BC4292 /* Image+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+.swift"; sourceTree = "<group>"; };
 		CAA699A92A013BC9009C0025 /* BiometricViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricViewModel.swift; sourceTree = "<group>"; };
 		CAA699AB2A013BDA009C0025 /* BiometricAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthView.swift; sourceTree = "<group>"; };
 		CAA699AD2A014133009C0025 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -320,6 +326,30 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		CA7836D82A05F42A00BC4292 /* BottomSheetView */ = {
+			isa = PBXGroup;
+			children = (
+				CA7836D92A05F44100BC4292 /* BottomSheetView.swift */,
+			);
+			path = BottomSheetView;
+			sourceTree = "<group>";
+		};
+		CA7836DB2A05F61200BC4292 /* MatchedGeometry */ = {
+			isa = PBXGroup;
+			children = (
+				CA7836DC2A05F62300BC4292 /* MatchedGeometry.swift */,
+			);
+			path = MatchedGeometry;
+			sourceTree = "<group>";
+		};
+		CA7836DE2A05FBFF00BC4292 /* Image+ */ = {
+			isa = PBXGroup;
+			children = (
+				CA7836DF2A05FC0D00BC4292 /* Image+.swift */,
+			);
+			path = "Image+";
+			sourceTree = "<group>";
+		};
 		CAA699A62A013BA8009C0025 /* BiometricAuth */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +412,7 @@
 		CAE70A2629F0DE69000A2400 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				CA7836DE2A05FBFF00BC4292 /* Image+ */,
 				CA36056F29F1B87600A1F146 /* View+ */,
 				CAE70A2729F0DE77000A2400 /* Color+ */,
 			);
@@ -407,6 +438,8 @@
 		CAFF562829EF8FE0001BEB8D /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				CA7836DB2A05F61200BC4292 /* MatchedGeometry */,
+				CA7836D82A05F42A00BC4292 /* BottomSheetView */,
 				CA101F192A03DF1D00BFBA07 /* MapView */,
 				CA2178DE2A02069D005C90D5 /* CustomAlertView */,
 				CA2178D42A02000D005C90D5 /* Navigations */,
@@ -493,6 +526,7 @@
 				CA101F222A03DF5800BFBA07 /* MapModel.swift in Sources */,
 				CAE70A2C29F0E8B4000A2400 /* TabBarView.swift in Sources */,
 				CA2178DA2A02007E005C90D5 /* NavigationSheet.swift in Sources */,
+				CA7836E02A05FC0D00BC4292 /* Image+.swift in Sources */,
 				CACAA7B229F6B19D00C77977 /* Padding.swift in Sources */,
 				CACFBFDC29FA1D65005EF72E /* PokemonDetailView.swift in Sources */,
 				CACFBFB929FA1BB4005EF72E /* Json4Swift_Base.swift in Sources */,
@@ -510,11 +544,13 @@
 				CA0A449E29FB6FFC00903AC0 /* ProfileComposableView.swift in Sources */,
 				CACFBFDE29FA213A005EF72E /* Ability.swift in Sources */,
 				CA3D762729F77C7800D905BA /* PokemonModel.swift in Sources */,
+				CA7836DD2A05F62300BC4292 /* MatchedGeometry.swift in Sources */,
 				CA36056829F199D000A1F146 /* FormModel.swift in Sources */,
 				CAA699AA2A013BC9009C0025 /* BiometricViewModel.swift in Sources */,
 				CA2178DD2A020096005C90D5 /* Halfsheet.swift in Sources */,
 				CA36056129F1991800A1F146 /* FormView.swift in Sources */,
 				CACFBFCD29FA1BB4005EF72E /* Abilities.swift in Sources */,
+				CA7836DA2A05F44100BC4292 /* BottomSheetView.swift in Sources */,
 				CA2178E02A0206B1005C90D5 /* CustomAlertView.swift in Sources */,
 				CA3D762929F77E5800D905BA /* ApiViewModel.swift in Sources */,
 				CA4EF5172A00BB29002E9DD8 /* CustomCardView.swift in Sources */,

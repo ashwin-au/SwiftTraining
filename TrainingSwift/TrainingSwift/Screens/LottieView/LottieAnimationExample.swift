@@ -11,7 +11,7 @@ struct LottieAnimationExample: View {
     @State var isPaused: Bool = false
     var body: some View {
         VStack {
-            LottieView(filename: "rocket.json", isPaused: isPaused)
+          LottieView(filename: "catError.json", isPaused: isPaused)
                 .frame(width: 300, height: 300)
             Spacer()
             
